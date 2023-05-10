@@ -5,7 +5,7 @@
   <groupId>com.company</groupId>
   <artifactId>assistencia</artifactId>
   <version>0.0.1</version>
-  <name>Assistencia-Bonita-Studio</name>
+  <name>Assistencia-Bonita-Studio-definitivo</name>
   <description></description>
   <properties>
     <bonita.runtime.version>7.15.0</bonita.runtime.version>
