@@ -208,7 +208,7 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_9vpCw-RWEe2H0rOalbGbSA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:XORGateway" xmi:id="_A_YGQO04Ee2p7pyvb2Kl9A" name="Competência nível 1" outgoing="_RsFUIO04Ee2p7pyvb2Kl9A _wPWCIO04Ee2p7pyvb2Kl9A" incoming="_rOrzgORXEe2H0rOalbGbSA">
+        <elements xmi:type="process:XORGateway" xmi:id="_A_YGQO04Ee2p7pyvb2Kl9A" name="Competência nível 01" outgoing="_RsFUIO04Ee2p7pyvb2Kl9A _wPWCIO04Ee2p7pyvb2Kl9A" incoming="_rOrzgORXEe2H0rOalbGbSA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_A_h3Qe04Ee2p7pyvb2Kl9A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_A_h3QO04Ee2p7pyvb2Kl9A" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_A_h3Qu04Ee2p7pyvb2Kl9A" name="" content="" returnTypeFixed="true"/>
