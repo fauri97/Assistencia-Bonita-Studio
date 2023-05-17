@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_9vpCsORWEe2H0rOalbGbSA" name="Assistência" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_9vpCseRWEe2H0rOalbGbSA" name="Suporte nível 3">
+    <elements xmi:type="process:Pool" xmi:id="_9vpCseRWEe2H0rOalbGbSA" name="Assistência à TI">
       <elements xmi:type="process:Lane" xmi:id="_tPSxYOneEe2YV7o_DhzGzA" name="Cliente" actor="_ZkYJIOniEe2YV7o_DhzGzA">
         <elements xmi:type="process:StartEvent" xmi:id="_9vpCs-RWEe2H0rOalbGbSA" name="Abrir Chamado" outgoing="_9vpCyORWEe2H0rOalbGbSA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_9vpCtORWEe2H0rOalbGbSA" name="" content="" returnTypeFixed="true"/>
@@ -52,7 +52,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_J7j1l--SEe2Ka8xnNDk7_A" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_J7j1lu-SEe2Ka8xnNDk7_A" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_RgaHGu-SEe2Ka8xnNDk7_A">
-            <targetForm xmi:type="expression:Expression" xmi:id="_RgaHG--SEe2Ka8xnNDk7_A" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="__MRBMPOKEe26R-MFUhlsbw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_RgaHGe-SEe2Ka8xnNDk7_A"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_RgaHHO-SEe2Ka8xnNDk7_A" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -131,7 +131,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_JpJK2ORYEe2H0rOalbGbSA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_JpJK1-RYEe2H0rOalbGbSA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="__4YZEu-UEe2qhJ5eo__cMA">
-            <targetForm xmi:type="expression:Expression" xmi:id="__4YZE--UEe2qhJ5eo__cMA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="__MRBMfOKEe26R-MFUhlsbw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="__4YZEe-UEe2qhJ5eo__cMA"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="__4YZFO-UEe2qhJ5eo__cMA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -227,26 +227,26 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_nIoRF-0_Ee2vk-d0qC2Xog" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_nIoRGO0_Ee2vk-d0qC2Xog" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_MjM1Ke1AEe2vk-d0qC2Xog">
-            <targetForm xmi:type="expression:Expression" xmi:id="_MjM1Ku1AEe2vk-d0qC2Xog" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_MjM1Ku1AEe2vk-d0qC2Xog" name="responderChamado" content="7a965de0-6205-4e60-8b6c-7e295f5dbc61" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_MjM1KO1AEe2vk-d0qC2Xog"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_MjM1K-1AEe2vk-d0qC2Xog" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_OIIUIOrmEe2dVYWf7XlkhQ" name="chamado" dataType="_9vpC5ORWEe2H0rOalbGbSA" className="com.company.model.Chamados">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_boivternEe2dVYWf7XlkhQ" name="initChamado()" content="def chamadosVar = new com.company.model.Chamados()&#xA;chamadosVar.tipoChamado = chamadoInput?.tipoChamado&#xA;chamadosVar.necessidade = chamadoInput?.necessidade&#xA;return chamadosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Chamados">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_boivturnEe2dVYWf7XlkhQ" name="chamadoInput" type="COMPLEX"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_bkIZMPOMEe26R-MFUhlsbw" name="initChamado()" content="def chamadosVar = new com.company.model.Chamados()&#xA;chamadosVar.tipoChamado = chamadoInput?.tipoChamado&#xA;chamadosVar.necessidade = chamadoInput?.necessidade&#xA;chamadosVar.nivelSuporte = chamadoInput?.nivelSuporte&#xA;return chamadosVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Chamados">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_bkIZMfOMEe26R-MFUhlsbw" name="chamadoInput" type="COMPLEX"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_9vpCxORWEe2H0rOalbGbSA">
-        <targetForm xmi:type="expression:Expression" xmi:id="_h0JqcOr0Ee2dVYWf7XlkhQ" name="iniciarChamado" content="8cc5c6af-402f-444e-9b81-d2741caad4ba" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_fln4sPOMEe26R-MFUhlsbw" name="iniciarChamado" content="ed87b787-03fc-409a-ab9f-145a76ad5efb" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_9vpCxuRWEe2H0rOalbGbSA">
         <targetForm xmi:type="expression:Expression" xmi:id="_UTMa8O-WEe2qhJ5eo__cMA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_9vpCyORWEe2H0rOalbGbSA" target="_9vpCt-RWEe2H0rOalbGbSA" source="_9vpCs-RWEe2H0rOalbGbSA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_9vpCyeRWEe2H0rOalbGbSA"/>
-        <condition xmi:type="expression:Expression" xmi:id="_9vpCyuRWEe2H0rOalbGbSA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_9vpCyuRWEe2H0rOalbGbSA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_rOrzgORXEe2H0rOalbGbSA" target="_A_YGQO04Ee2p7pyvb2Kl9A" source="_9vpCt-RWEe2H0rOalbGbSA">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_rOrzgeRXEe2H0rOalbGbSA"/>
@@ -341,14 +341,18 @@
       <actors xmi:type="process:Actor" xmi:id="_gHqP8OniEe2YV7o_DhzGzA" name="Suporte Nível 3"/>
       <actors xmi:type="process:Actor" xmi:id="_eoauEO1AEe2vk-d0qC2Xog" name="Suporte nível 2"/>
       <contract xmi:type="process:Contract" xmi:id="_9vpCzORWEe2H0rOalbGbSA">
-        <inputs xmi:type="process:ContractInput" xmi:id="_boivsOrnEe2dVYWf7XlkhQ" name="chamadoInput" type="COMPLEX" dataReference="chamado">
-          <inputs xmi:type="process:ContractInput" xmi:id="_boivsernEe2dVYWf7XlkhQ" name="tipoChamado" type="INTEGER"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_boivsurnEe2dVYWf7XlkhQ" name="necessidade"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_bkHyIPOMEe26R-MFUhlsbw" name="chamadoInput" type="COMPLEX" dataReference="chamado">
+          <inputs xmi:type="process:ContractInput" xmi:id="_bkHyIfOMEe26R-MFUhlsbw" name="tipoChamado" type="INTEGER"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_bkHyIvOMEe26R-MFUhlsbw" name="necessidade"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_bkHyI_OMEe26R-MFUhlsbw" name="nivelSuporte" type="INTEGER"/>
         </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_boivs-rnEe2dVYWf7XlkhQ" expression="chamadoInput?.tipoChamado != null" errorMessage="tipoChamado is mandatory for Chamados" name="mandatory_chamadoInput_tipoChamado">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_bkHyJPOMEe26R-MFUhlsbw" expression="chamadoInput?.tipoChamado != null" errorMessage="tipoChamado is mandatory for Chamados" name="mandatory_chamadoInput_tipoChamado">
           <inputNames>chamadoInput</inputNames>
         </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_boivtOrnEe2dVYWf7XlkhQ" expression="chamadoInput?.necessidade != null" errorMessage="necessidade is mandatory for Chamados" name="mandatory_chamadoInput_necessidade">
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_bkHyJfOMEe26R-MFUhlsbw" expression="chamadoInput?.necessidade != null" errorMessage="necessidade is mandatory for Chamados" name="mandatory_chamadoInput_necessidade">
+          <inputNames>chamadoInput</inputNames>
+        </constraints>
+        <constraints xmi:type="process:ContractConstraint" xmi:id="_bkHyJvOMEe26R-MFUhlsbw" expression="chamadoInput?.nivelSuporte != null" errorMessage="nivelSuporte is mandatory for Chamados" name="mandatory_chamadoInput_nivelSuporte">
           <inputNames>chamadoInput</inputNames>
         </constraints>
       </contract>

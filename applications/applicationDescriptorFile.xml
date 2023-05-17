@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
     <application token="reclamacoes" version="1.0" profile="User" homePage="dashboard" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
-        <displayName>Reclamações App</displayName>
+        <displayName>Assistência à TI</displayName>
         <applicationPages>
             <applicationPage customPage="custompage_reclamacoesApp" token="dashboard"/>
         </applicationPages>

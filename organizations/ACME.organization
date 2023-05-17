@@ -547,6 +547,51 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
+    <user userName="Antenor">
+      <manager>Bruno</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Alberto">
+      <manager>Bruno</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Antonio">
+      <manager>Bernardo</manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Bernardo">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Bruno">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Carlos">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Caroline">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -606,6 +651,18 @@
     <group name="services" parentPath="/acme/production">
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
+    </group>
+    <group name="Technology Information">
+      <displayName>TI</displayName>
+    </group>
+    <group name="Suporte level 1" parentPath="/Technology Information">
+      <displayName>Suporte level 1</displayName>
+    </group>
+    <group name="Suporte level 2" parentPath="/Technology Information">
+      <displayName>Suporte level 2</displayName>
+    </group>
+    <group name="Suporte level 3" parentPath="/Technology Information">
+      <displayName>Suporte level 3</displayName>
     </group>
   </groups>
   <memberships>
@@ -733,6 +790,47 @@
       <roleName>member</roleName>
       <groupName>north_america</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Antenor</userName>
+      <roleName>member</roleName>
+      <groupName>Suporte level 1</groupName>
+      <groupParentPath>/Technology Information</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Alberto</userName>
+      <roleName>member</roleName>
+      <groupName>Suporte level 1</groupName>
+      <groupParentPath>/Technology Information</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Antonio</userName>
+      <roleName>member</roleName>
+      <groupName>acme</groupName>
+    </membership>
+    <membership>
+      <userName>Bernardo</userName>
+      <roleName>member</roleName>
+      <groupName>Suporte level 2</groupName>
+      <groupParentPath>/Technology Information</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Bruno</userName>
+      <roleName>member</roleName>
+      <groupName>Suporte level 2</groupName>
+      <groupParentPath>/Technology Information</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Carlos</userName>
+      <roleName>member</roleName>
+      <groupName>Suporte level 3</groupName>
+      <groupParentPath>/Technology Information</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Caroline</userName>
+      <roleName>member</roleName>
+      <groupName>Suporte level 3</groupName>
+      <groupParentPath>/Technology Information</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
